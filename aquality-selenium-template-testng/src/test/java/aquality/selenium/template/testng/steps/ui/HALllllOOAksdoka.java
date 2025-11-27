@@ -8,7 +8,7 @@ import io.qameta.allure.Step;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.testng.Assert.assertTrue;
 
-public class ContactUsSteps {
+public class HALllllOOAksdoka {
     @Inject
     private ContactUsPage contactUsPage;
 
