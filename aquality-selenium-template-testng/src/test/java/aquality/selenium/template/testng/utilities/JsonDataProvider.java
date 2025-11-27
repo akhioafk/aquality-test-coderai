@@ -26,11 +26,15 @@ public class JsonDataProvider {
         try {
             File file = Paths.get(String.format("src/test/resources/data/%s.json", filename)).toFile();
             dataList = MAPPER.readValue(file, valueType);
-        }
-        catch (IOException exception) {
-            AqualityServices.getLogger().debug("IO error occurred while reading the data from the file " + filename, exception);
+        } catch (IOException exception) {
+            AqualityServices.getLogger().debug("IO error occurred while reading the data from the file " + filename,
+                    exception);
             throw exception;
         }
-        return new Object[][] {dataList};
+        return new Object[][] { dataList };
+    }
+
+    public static void waitSeconds(int seconds) {
+        // basic wait implementation
     }
 }
